@@ -1,0 +1,8 @@
+Difficulties:
+1.When adding cblas to makefile firstly I dont know how to do. I try to add -lcblas to LDFLAGS, then it forturnately worked.
+Q1:
+OBJS  := $(BUILD_DIR)/util.o $(BUILD_DIR)/REF_MMult.o $(BUILD_DIR)/test_MMult.o $(BUILD_DIR)/$(NEW).o $(BUILD_DIR)/cblas_MMult.o
+    determins which MY_MMult I should use
+Q2:
+$(BUILD_DIR)/test_MMult.x >> $(DATA_DIR)/output_$(NEW).m
+The command above redirect outputflow to assigned file.
